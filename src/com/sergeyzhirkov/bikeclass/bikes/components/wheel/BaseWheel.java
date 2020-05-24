@@ -1,21 +1,14 @@
-package com.sergeyzhirkov.bikeclass.bikes.components;
+package com.sergeyzhirkov.bikeclass.bikes.components.wheel;
 
-public class Wheel {
-    public enum Type{
-        ROAD_WHEEL,
-        SPORT_WHEEL;
-    }
+import com.sergeyzhirkov.bikeclass.bikes.components.properties.Drive;
+import com.sergeyzhirkov.bikeclass.bikes.components.properties.TypeWheel;
 
-    public enum Drive{
-        FORWARD,
-        BACK,
-        STOP;
-    }
+public abstract class BaseWheel implements Wheel {
 
-    private Type type;
+    private TypeWheel type;
     private Drive statusDrive = Drive.STOP;
 
-    public Wheel(Type type) {
+    public BaseWheel(TypeWheel type) {
         this.type = type;
     }
 

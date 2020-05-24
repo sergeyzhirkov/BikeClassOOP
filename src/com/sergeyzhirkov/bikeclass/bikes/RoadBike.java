@@ -1,10 +1,10 @@
 package com.sergeyzhirkov.bikeclass.bikes;
 
-import com.sergeyzhirkov.bikeclass.bikes.components.Handlebar;
-import com.sergeyzhirkov.bikeclass.bikes.components.Wheel;
+import com.sergeyzhirkov.bikeclass.bikes.components.properties.TypeHandlebar;
+import com.sergeyzhirkov.bikeclass.bikes.components.properties.TypeWheel;
 
-public class RoadBike extends CustomBike{
+public class RoadBike extends CustomBike {
     public RoadBike() {
-        super(Handlebar.Type.ROAD_HANDLEBAR, Wheel.Type.ROAD_WHEEL);
+        super(TypeHandlebar.ROAD_HANDLEBAR, TypeWheel.ROAD_WHEEL);
     }
 }
